@@ -267,6 +267,9 @@ nav .mo-close-icon .text {
     display: block;
   }
 }
+nav .mo-close-icon:hover {
+  color: #fff;
+}
 nav .nav-li {
   height: 59px;
   border-top: 1px solid #e6e6e6;
