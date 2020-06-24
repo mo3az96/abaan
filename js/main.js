@@ -5,6 +5,7 @@ $(window).on('load', function () {
     });
 });
 $(document).ready(function () {
+    new WOW().init();
     /////////Main Slider/////////
     $('.main-slider').owlCarousel({
         items: 1,
@@ -30,11 +31,44 @@ $(document).ready(function () {
                 items: 2,
             },
             768: {
-                items: 3,
+                items: 2,
+                margin: 30,
+            },
+            991: {
+                items: 4,
+                margin: 5,
             },
             1200: {
                 items: 4
             }
         }
     });
+    /////////lg search/////////
+    $('.mo-search-icon').click(function () {
+        $(".search-form").slideToggle(300);
+        $(this).toggleClass("active");
+    });
+    ///////////////menu/////////////////////
+
+    $('.mo-menu-icon').click(function () {
+        $("nav").fadeIn(300);
+        $(".mo-navbar-cont").addClass("nav-in");
+        $("body").addClass("overflow");
+    });
+
+    $('nav').click(function () {
+        $("nav").fadeOut(400);
+        $(".mo-navbar-cont").removeClass("nav-in");
+        $("body").removeClass("overflow");
+    });
+    $('.mo-navbar-cont').click(function (e) {
+        e.stopPropagation();
+    });
+
+    $('.mo-close-icon').click(function () {
+        $("nav").fadeOut(400);
+        $(".mo-navbar-cont").removeClass("nav-in");
+        $("body").removeClass("overflow");
+    });
 });
+
