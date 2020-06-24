@@ -1115,8 +1115,18 @@ html[dir=ltr] .user-anchor.mo-cart-icon, html[dir=ltr] .user-anchor.mo-menu-icon
 .user-anchor:hover .count {
   transform: scaleX(-1);
 }
+@media (max-width: 767px) {
+  .user-anchor:hover {
+    color: #d5a2b3;
+  }
+}
 .user-anchor:not(span):focus {
   color: #fff;
+}
+@media (max-width: 767px) {
+  .user-anchor:not(span):focus {
+    color: #d5a2b3;
+  }
 }
 @media (max-width: 991px) {
   .user-anchor.mo-search-icon, .user-anchor.mo-log-icon {
@@ -1339,6 +1349,11 @@ footer {
 }
 .nav-foot-link:hover, .nav-foot-link:focus {
   color: #d5a2b3;
+}
+@media (max-width: 767px) {
+  .nav-foot-link:hover, .nav-foot-link:focus {
+    color: #fff;
+  }
 }
 
 .social {
