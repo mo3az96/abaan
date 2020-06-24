@@ -1410,6 +1410,9 @@ footer {
   .copyright div {
     order: 2;
   }
+  .copyright div.maarof-cont {
+    order: 1;
+  }
 }
 
 .maarof-cont {
@@ -1417,7 +1420,6 @@ footer {
 }
 @media (max-width: 767px) {
   .maarof-cont {
-    order: 1;
     margin-bottom: 10px;
   }
 }
